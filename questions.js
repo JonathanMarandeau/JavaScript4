@@ -7,22 +7,22 @@ var tailleString = function (texte) {
     return texte.length;//Donne la taille de la chaine de caractères
 }
 var remplaceECar = function (texte) {
-    return texte.replace('e',' ');
+    return texte.replace('e',' ');//On remplace le e par rien
 }
 var concatString = function (texte1, texte2) {
-    return texte1+texte2;
+    return texte1+texte2;//on assemble les deux parties de textes ensemble
 }
 var afficherCar5 = function (texte) {
-    return texte[4];
+    return texte[4];//On selectionne le 5eme caractères
 }
 var afficher9Car = function (texte) {
-    return texte.substring(0,9);
+    return texte.substring(0,9);//On affiche les 9 premiers caracteres
 }
 var majusculeString = function (texte) {
-    return texte.toUpperCase();
+    return texte.toUpperCase();//On mets le texte en majuscule
 }
 var minusculeString = function (texte) {
-    return texte.toLowerCase();
+    return texte.toLowerCase();//On mets le texte en minuscule
 }
 var SupprEspaceString = function (texte) {
     return 'A completer';
