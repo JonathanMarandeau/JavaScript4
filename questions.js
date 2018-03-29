@@ -31,33 +31,33 @@ var IsString = function (texte) {
     return (typeof texte == 'string');//Afficher true si l'entrée de la fonction est de type string
 }
 var AfficherExtensionString = function (texte) {
-    return texte.substring(texte.lastIndexOf('.')+1);
+    return texte.substring(texte.lastIndexOf('.')+1);//Afficher l'extension d'un fichier
 }
 var NombreEspaceString = function (texte) {
-    return texte.split(' ').length - 1;
+    return texte.split(' ').length - 1;//Permet de compter le nombre d'espace dans la chaine
 }
 var InverseString = function (texte) {
-    return texte.split('').reverse().join('');
+    return texte.split('').reverse().join('');//Permet d'inverser la chaine de caractère
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 var calculPuissance = function (x, y) {
-    return 'A completer';
+    return Math.pow(x,y);//Permet de calculer la puissance d'un nombre par rapport à un autre (x à la puissance y)
 }
 var valeurAbsolue = function (nombre) {
-    return 'A completer';
+    return Math.abs(nombre);//Permet d'afficher la valeur absolue d'un Nombre
 }
 var valeurAbsolueArray = function (array) {
-    return 'A completer';
+    return array.map(Math.abs);
 }
 var sufaceCercle = function (rayon) {
-    return 'A completer';
+    return Math.round(Math.PI*Math.pow(rayon,2));//Math.round pour arrondir a l'entier le plus proche,math.PI pour la valeur pi,puis le Math.pow pour le rayon au carré
 }
 var hypothenuse = function (ab, ac) {
-    return 'A completer';
+    return Math.hypot(ab,ac);//Permet de calculer l'hypothenuse
 }
 var calculIMC = function (poids, taille) {
-    return 'A completer';
+    return Number((poids/Math.pow(taille,2)).toFixed(2));//Le Number permet de transformer le resultat "texte" en "chiffre",toFixed() sert a choisir le nombre de chiffre après la virgule
 }
