@@ -25,19 +25,19 @@ var minusculeString = function (texte) {
     return texte.toLowerCase();//On mets le texte en minuscule
 }
 var SupprEspaceString = function (texte) {
-    return 'A completer';
+    return texte.trim();//On supprime les espaces inutiles avant et après le texte
 }
 var IsString = function (texte) {
-    return 'A completer';
+    return (typeof texte == 'string');//Afficher true si l'entrée de la fonction est de type string
 }
 var AfficherExtensionString = function (texte) {
-    return 'A completer';
+    return texte.substring(texte.lastIndexOf('.')+1);
 }
 var NombreEspaceString = function (texte) {
-    return 'A completer';
+    return texte.split(' ').length - 1;
 }
 var InverseString = function (texte) {
-    return 'A completer';
+    return texte.split('').reverse().join('');
 }
 
 /**
